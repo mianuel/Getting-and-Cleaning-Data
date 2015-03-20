@@ -4,7 +4,14 @@
 The goal of the R script **run_analysis.R** is to prepare tidy data from the accelerometers of the Samsung Galaxy S smartphone and save them to a text file call *tidy_data.txt*. The data collected from the accelerometers is reading from a text file. For the purpose of the course the data can be retreive at this web adress: [link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 ## How to execute
-R should installed in your computer. You can download R [here](). You should execute run_analysis.R in the same directory where you have uncrompress data from the accelerometers (where the folder *UCI HAR Dataset* exist).
+R should installed in your computer. You can download R [here]().
+
+The R package data.table and reshape2 is required to run this script. This maybe installed with,
+
+>install.package("reshape2")
+>install.package("data.table")
+
+You should execute run_analysis.R in the same directory where you have uncrompress data from the accelerometers (where the folder *UCI HAR Dataset* exist).
 > R run_analysis.R
 
 ## Transfromation perform by run_analysis.R
@@ -21,6 +28,6 @@ R should installed in your computer. You can download R [here](). You should exe
 All tidy data are ouput in a test file: *tidy_data.txt*
 
 ## More information
-More information can be obtain in the file CoodeBook.md
+For futher details, refer to CoodeBook.md
 
 Thank you for reading this file.
