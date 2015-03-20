@@ -70,5 +70,6 @@ data_Means = dcast(meltedData , Subjects + all_label ~ variable, mean)
 
 # Save the resulting dataset
 print("Writing tidy data set.")
-write.table(data_Means, file="tidy_data.txt", row.name <- FALSE)
+#write.table(data_Means, file="tidy_data.txt", row.name <- FALSE)
+write.table(data_Means, file="tidy_data.txt")
 
